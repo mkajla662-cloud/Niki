@@ -35,7 +35,7 @@ async def show_random_emojis(message):
     emoji_message = await message.reply_text(' '.join(random.choices(emojis, k=1)))
     return emoji_message
 
-owner_id = 7212452634
+owner_id = 7518770522
 
 # Initialize the bot
 bot = Client(
@@ -112,7 +112,7 @@ async def cookies_handler(client: Client, m: Message):
         
 @bot.on_message(filters.command(["start"]) )
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text(f"**Ram Ram Sa🙂😁**\n**Bot Made BY ❣️𓊈Ⅾ𝔯Ṃũ𝕤īcī𝗮𝚗𓊉❣️(✿◠‿◠)™🇮🇳**")
+    editable = await m.reply_text(f"**Ram Ram Sa🙂😁**\n**Bot Made BY @inventor_king_09**")
 
 @bot.on_message(filters.command(["stop"]) )
 async def restart_handler(_, m):
@@ -209,7 +209,7 @@ async def youtube_to_txt(client, message: Message):
     # Remove the temporary text file after sending
     os.remove(txt_file)
 
-@bot.on_message(filters.command(["ramram","deaduser"]) )
+@bot.on_message(filters.command(["manish","deaduser"]) )
 async def txt_handler(bot: Client, m: Message):
     user_id = m.from_user.id
     if user_id not in auth_users:
@@ -220,7 +220,7 @@ async def txt_handler(bot: Client, m: Message):
     x = await input.download()
     await input.delete(True)
     file_name, ext = os.path.splitext(os.path.basename(x))
-    credit ="❣️𓊈Ⅾ𝔯Ṃũ𝕤īcī𝗮𝚗𓊉❣️" 
+    credit ="@inventor_king_09" 
     try:    
         with open(x, "r") as f:
             content = f.read()
@@ -251,7 +251,7 @@ async def txt_handler(bot: Client, m: Message):
     else:
         b_name = raw_text0
 
-    await editable.edit("╭━━━━❰ᴇɴᴛᴇʀ ʀᴇꜱᴏʟᴜᴛɪᴏɴ❱━━➣ \n┣━━⪼ send  144  for 144p\n┣━━⪼ send  240  for 240p\n┣━━⪼ send  360  for 360p\n┣━━⪼ send  480  for 480p\n┣━━⪼ send  720  for 720p\n┣━━⪼ send  1080 for 1080p\n 🔹╰⌈❣️𓊈Ⅾ𝔯Ṃũ𝕤īcī𝗮𝚗𓊉❣️(✿◠‿◠)⌋➣ ")
+    await editable.edit("╭━━━━❰ᴇɴᴛᴇʀ ʀᴇꜱᴏʟᴜᴛɪᴏɴ❱━━➣ \n┣━━⪼ send  144  for 144p\n┣━━⪼ send  240  for 240p\n┣━━⪼ send  360  for 360p\n┣━━⪼ send  480  for 480p\n┣━━⪼ send  720  for 720p\n┣━━⪼ send  1080 for 1080p\n 🔹@inventor_king_09 ")
     input2: Message = await bot.listen(editable.chat.id)
     raw_text2 = input2.text
     quality = input2.text
@@ -274,7 +274,7 @@ async def txt_handler(bot: Client, m: Message):
     except Exception:
             res = "UN"
 
-    await editable.edit("**🔹Enter Your Name\@ramramsa00bot🔹Send 1 for use default**")
+    await editable.edit("**🔹Enter Your Name\@inventor_king_09🔹Send 1 for use default**")
     input3: Message = await bot.listen(editable.chat.id)
     raw_text3 = input3.text
     await input3.delete(True)
@@ -364,11 +364,11 @@ async def txt_handler(bot: Client, m: Message):
                 cmd = f'yt-dlp -f "{ytf}" "{url}" -o "{name}.mp4"'
 
             try:  
-                cc = f'**\n╭──────.★..─╮\n{str(count).zfill(3)}\n╰─..★.──────╯**\n\n**📝 Title:** {name1} \n**├── Extention :** @RamRamSa00bot.mkv\n**├── Resolution :** [{res}]\n\n<pre><code>📚 Batch Name: {b_name}</code></pre>\n\n**📥 Extracted By :**\n╭──────────.✨..─╮\n\n      {CR}\n\n╰─..✨.──────────╯\n\n**<pre><code>━━━━━✦❣️𓊈Ⅾ𝔯Ṃũ𝕤īcī𝗮𝚗𓊉❣️✦━━━━━</code></pre>**'
-                cc1 = f'**\n╭──────.★..─╮\n{str(count).zfill(3)}\n╰─..★.──────╯**\n\n**📝 Title:** {name1} \n**├── Extention :** @RamRamSa00bot.pdf\n**├── Resolution :** [None]\n\n<pre><code>📚 Batch Name: {b_name}</code></pre>\n\n**📥 Extracted By :**\n╭──────────.✨..─╮\n\n      {CR}\n\n╰─..✨.──────────╯\n\n**<pre><code>━━━━━✦❣️𓊈Ⅾ𝔯Ṃũ𝕤īcī𝗮𝚗𓊉❣️✦━━━━━</code></pre>**'
-                cczip = f'<pre><quote>——— ✦  {str(count).zfill(3)} ✦ ———</quote></pre>\n\n📁𝐓𝐢𝐭𝐥𝐞 » `{name1}` .zip\n\n<pre><code>📚 Course : {b_name}</code></pre>\n\n🌟𝐄𝐱𝐭𝐫𝐚𝐜𝐭𝐞𝐝 𝐁𝐲 » `{CR}`\n' ' @ramramsa00bot'  
-                ccimg = f'**\n╭──────.★..─╮\n{str(count).zfill(3)}\n╰─..★.──────╯**\n\n**📝 Title:** {name1} \n**├── Extention :** @RamRamSa00bot.jpg\n**├── Resolution :** [None]\n\n<pre><code>📚 Batch Name: {b_name}</code></pre>\n\n**📥 Extracted By :**\n╭──────────.✨..─╮\n\n      {CR}\n\n╰─..✨.──────────╯\n\n**<pre><code>━━━━━✦❣️𓊈Ⅾ𝔯Ṃũ𝕤īcī𝗮𝚗𓊉❣️✦━━━━━</code></pre>**'
-                ccyt = f'<pre><quote>——— ✦  {str(count).zfill(3)} ✦ ———</quote></pre>\n\n🎞️𝐓𝐢𝐭𝐥𝐞 » `{name1}` .mp4\n\n<a href="{url}">__**Click Here to Watch Stream**__</a>\n\n<pre><code>📚 Course : {b_name}</code></pre>\n\n🌟𝐄𝐱𝐭𝐫𝐚𝐜𝐭𝐞𝐝 𝐁𝐲 » `{CR}`\n''@ramramsa00bot'
+                cc = f'**\n╭──────.★..─╮\n{str(count).zfill(3)}\n╰─..★.──────╯**\n\n**📝 Title:** {name1} \n**├── Extention :** @inventor_king_09.mkv\n**├── Resolution :** [{res}]\n\n<pre><code>📚 Batch Name: {b_name}</code></pre>\n\n**📥 Extracted By :**\n╭──────────.✨..─╮\n\n      {CR}\n\n╰─..✨.──────────╯\n\n**<pre><code>━━━━━✦❣️@inventor_king_09❣️✦━━━━━</code></pre>**'
+                cc1 = f'**\n╭──────.★..─╮\n{str(count).zfill(3)}\n╰─..★.──────╯**\n\n**📝 Title:** {name1} \n**├── Extention :** @inventor_king_09.pdf\n**├── Resolution :** [None]\n\n<pre><code>📚 Batch Name: {b_name}</code></pre>\n\n**📥 Extracted By :**\n╭──────────.✨..─╮\n\n      {CR}\n\n╰─..✨.──────────╯\n\n**<pre><code>━━━━━✦❣️@inventor_king_09❣️✦━━━━━</code></pre>**'
+                cczip = f'<pre><quote>——— ✦  {str(count).zfill(3)} ✦ ———</quote></pre>\n\n📁𝐓𝐢𝐭𝐥𝐞 » `{name1}` .zip\n\n<pre><code>📚 Course : {b_name}</code></pre>\n\n🌟𝐄𝐱𝐭𝐫𝐚𝐜𝐭𝐞𝐝 𝐁𝐲 » `{CR}`\n' ' @inventor_king_09'  
+                ccimg = f'**\n╭──────.★..─╮\n{str(count).zfill(3)}\n╰─..★.──────╯**\n\n**📝 Title:** {name1} \n**├── Extention :** @inventor_king_09.jpg\n**├── Resolution :** [None]\n\n<pre><code>📚 Batch Name: {b_name}</code></pre>\n\n**📥 Extracted By :**\n╭──────────.✨..─╮\n\n      {CR}\n\n╰─..✨.──────────╯\n\n**<pre><code>━━━━━✦❣️@inventor_king_09❣️✦━━━━━</code></pre>**'
+                ccyt = f'<pre><quote>——— ✦  {str(count).zfill(3)} ✦ ———</quote></pre>\n\n🎞️𝐓𝐢𝐭𝐥𝐞 » `{name1}` .mp4\n\n<a href="{url}">__**Click Here to Watch Stream**__</a>\n\n<pre><code>📚 Course : {b_name}</code></pre>\n\n🌟𝐄𝐱𝐭𝐫𝐚𝐜𝐭𝐞𝐝 𝐁𝐲 » `{CR}`\n''@inventor_king_09'
                                  
                 if "drive" in url:
                     try:
